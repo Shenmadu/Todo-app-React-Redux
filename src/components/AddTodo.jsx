@@ -7,27 +7,15 @@ export default function AddTodo() {
     const dispatch = useDispatch();
 
     function addTodoList() {
-
         const todo = document.getElementById('todoTxt').value;
         dispatch(addTodo(todo));
 
     }
-
-    // const addTodoHandler = (e) => {
-    //     e.preventDeafault();
-
-
-    //     dispatch(addTodo(input));
-    //     setInput('');
-    // }
-
     return (
         <div className="container  text-center">
             <h2>Add Todo</h2>
             <div className='row justify-content-center mt-3'>
-                {/* <input type="text" id='todoTxt' placeholder='Enter Todo...' 
-                 onChange={(e) => setInput(e.target.value)}
-                 /> */}
+
                 <div className='col-3'>
                     <input type="text" id='todoTxt' class="form-control"></input>
 

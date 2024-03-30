@@ -17,9 +17,11 @@ export default function ViewAllTodo(){
                      
                      <div>
                      {todo.text}
-                     <button onClick={()=>(dispatch(removeTodo(todo.id)))} className="btn btn-danger ms-5 mb-3">delete</button>
+                     <button onClick={()=>(dispatch(removeTodo(todo.id)))} 
+                     className="btn btn-danger ms-5 mb-3">delete</button>
 
                      </div>
+                     
                    
                 </li>
                
