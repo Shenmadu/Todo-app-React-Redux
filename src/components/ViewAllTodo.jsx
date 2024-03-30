@@ -8,8 +8,8 @@ export default function ViewAllTodo(){
     const dispatch = useDispatch();
 
     return(
-        <div className="container">
-             <div className="col-6">
+        <div className="container text-center">
+             <div className="row mt-5">
             <h3>Todos</h3>
             <ul>
             {todos.map((todo)=>(
@@ -17,7 +17,7 @@ export default function ViewAllTodo(){
                      
                      <div>
                      {todo.text}
-                     <button className="btn btn-danger ms-5 mb-3">delete</button>
+                     <button onClick={()=>(dispatch(removeTodo(todo.id)))} className="btn btn-danger ms-5 mb-3">delete</button>
 
                      </div>
                    

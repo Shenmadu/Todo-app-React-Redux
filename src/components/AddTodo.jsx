@@ -22,9 +22,9 @@ export default function AddTodo() {
     // }
 
     return (
-        <div className="container  ">
+        <div className="container  text-center">
             <h2>Add Todo</h2>
-            <div className='row'>
+            <div className='row justify-content-center mt-3'>
                 {/* <input type="text" id='todoTxt' placeholder='Enter Todo...' 
                  onChange={(e) => setInput(e.target.value)}
                  /> */}
